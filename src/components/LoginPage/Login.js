@@ -3,7 +3,7 @@ import {View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import styles from "./Login.style";
 // import auth from '@react-native-firebase/auth';
 
-const Login = ({navigation}) => {
+const Login = ({navigation , route}) => {
 
     const [email,setEmail] = useState('');
     const [password , setPassword] = useState('');

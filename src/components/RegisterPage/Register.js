@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {View,Text, Button, TextInput , TouchableOpacity, Alert } from "react-native";
 
 import styles from "./Register.style";
 
-
 const Register= ({navigation}) => {
 
  const onPressBackToLoginPage= () => {
-  navigation.goBack("Login");
+  navigation.goBack("Login" , {email,password});
  }
-  const users=[];
-
+  
   const [name,setName] = useState('');
   const [surname,setSurname] = useState('');
   const [email, setEmail] = useState('');
   const [password,setPassword] = useState('');
   const [college, setCollege] = useState('');
+  const [users , setUsers] = useState([]);
+  
+  useEffect(() => {
+    console.log('Current users:', users);
+  }, [users]); // Log users whenever it changes
 
 
   const handleSubmit= () => {
@@ -36,11 +39,9 @@ const Register= ({navigation}) => {
        return;
        }
 
-    users.push(user);
-    console.log("User successfully registered! ");
-    console.log(users);
+     setUsers((prevUsers) => [...prevUsers, user]); // Update users state with the new user
+     console.log('User successfully registered! ', user);
     
-
   }
 
   return (
