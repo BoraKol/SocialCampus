@@ -12,9 +12,9 @@ const Home = ({navigation}) => {
 
 
     return(
-        <View>
-            <Text>Home Page</Text>
-            <Button title='Profilime GİT' onPress={onPressToViewProfile}/>
+        <View style={styles.container}>
+            <Text style={styles.headerText}>Home Page</Text>
+            <Button title='Profilime Git' onPress={onPressToViewProfile}/>
         </View>
     )
 }

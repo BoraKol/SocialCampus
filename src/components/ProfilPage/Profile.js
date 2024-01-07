@@ -6,8 +6,8 @@ import styles from "./Profile.style";
 
 const Profile = () => {
     return(
-        <View>
-            <Text>Profile Page</Text>
+        <View style={styles.container}>
+            <Text style={styles.headerText}>Profile Page</Text>
         </View>
     )
 }

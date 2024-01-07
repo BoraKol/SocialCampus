@@ -47,12 +47,14 @@ const Register= ({navigation}) => {
   return (
     <View style={styles.register_container}>
         <Text style={styles.header_text}>Register Page</Text>
+        <Text style={styles.label}>Name</Text>
         <View style={styles.input_info}>         
             <TextInput placeholder='Name' placeholderTextColor="#003f5c"
             style={styles.input_text}
           onChangeText={text => setName(text)}
           />       
         </View>
+        <Text style={styles.label}>Surname</Text>
         <View style={styles.input_info}>
           <TextInput placeholder='Surname' 
           placeholderTextColor="#003f5c"
@@ -60,18 +62,21 @@ const Register= ({navigation}) => {
           onChangeText={text => setSurname(text)}
           />
         </View>
+        <Text style={styles.label}>Email</Text>
         <View style={styles.input_info}>
           <TextInput placeholder='Email'
           placeholderTextColor="#003f5c"
           style={styles.input_text}
           onChangeText={text => setEmail(text)}/>
         </View>
+        <Text style={styles.label}>Password</Text>
         <View style={styles.input_info}>
           <TextInput placeholder='Password' 
           placeholderTextColor="#003f5c"
           style={styles.input_text}
           onChangeText={text => setPassword(text)} />
         </View>
+        <Text style={styles.label}>College</Text>
         <View style={styles.input_info}>
           <TextInput placeholder='College'
           placeholderTextColor="#003f5c"

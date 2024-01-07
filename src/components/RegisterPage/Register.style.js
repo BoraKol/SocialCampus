@@ -13,14 +13,22 @@ export default StyleSheet.create({
         color:"#fb5b5a",
         marginBottom:40,
     },
+    label:{
+        textAlign:"left",
+        width:"17.4%",
+        marginBottom:5,
+        fontSize:16,
+        color:"white",
+
+    },
     input_info:{
         width:"20%",
         backgroundColor:"#3AB4BA",
         borderRadius:25,
         height:50,
-        marginBottom:20,
+        marginBottom:10,
         justifyContent:"center",
-        padding:25,
+        padding:20,
     },
     input_text:{
         height:50,
@@ -33,7 +41,7 @@ export default StyleSheet.create({
         width:100,
         textAlign:"center",
         padding:12,
-        marginTop:40,
+        marginTop:20,
         marginBottom:10,
         fontSize:14,
         

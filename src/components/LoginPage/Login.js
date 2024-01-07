@@ -1,7 +1,9 @@
 import React ,{useState} from "react";
 import {View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import styles from "./Login.style";
+
 // import auth from '@react-native-firebase/auth';
+
 
 const Login = ({navigation , route}) => {
 
@@ -18,9 +20,9 @@ const Login = ({navigation , route}) => {
                 return;
             }
 
-            if((email==='yukselcsgn@gmail.com' || email =='borakol@gmail.com' || user.email !== "" || user.password !=="")
+            if((email==='yukselcsgn@gmail.com' || email =='borakol@gmail.com')
             && (password==="12345") ){
-                console.log("User logged in successfully" , email, password);
+                console.log("User logged in successfully" , email, password);           
                 navigation.navigate("Home");
             }
 
@@ -59,6 +61,7 @@ const Login = ({navigation , route}) => {
         <View style={styles.login_container}>
            
                     <Text style={styles.header_text}>Login Page</Text>
+                     <Text style={styles.label}>Email</Text>
                         <View style={styles.input_info}>
                 
                     <TextInput style={styles.input_text}
@@ -67,7 +70,7 @@ const Login = ({navigation , route}) => {
                      onChangeText={(text)=> setEmail(text)}
                 />
                         </View>
-            
+                <Text style={styles.label}>Password</Text>
                 <View style={styles.input_info}>
                     <TextInput style={styles.input_text}
                         secureTextEntry 

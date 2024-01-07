@@ -13,12 +13,19 @@ export default StyleSheet.create({
         color:"#fb5b5a",
         marginBottom:40,
     },
+    label:{
+       textAlign:"left",
+       width:"17.4%", 
+       marginBottom:5,
+       color:"white",
+       fontSize:16,
+    },
     input_info:{
         width: "20%",
         backgroundColor:"#3AB4BA",
         borderRadius:25,
         height:50,
-        marginBottom:20,
+        marginBottom:10,
         justifyContent:"center",
         padding:20,
 
@@ -28,6 +35,7 @@ export default StyleSheet.create({
         color:"white",
     },
     forgot_password: {
+        marginTop:10,
         color:"white",
         fontSize:14,
        
@@ -38,7 +46,7 @@ export default StyleSheet.create({
         width:100,
         textAlign:"center",
         padding:12,
-        marginTop:40,
+        marginTop:20,
         marginBottom:10,
         fontSize:14, 
     },
