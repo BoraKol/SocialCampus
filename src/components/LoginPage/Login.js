@@ -2,13 +2,14 @@ import React ,{useState} from "react";
 import {View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import styles from "./Login.style";
 
-// import auth from '@react-native-firebase/auth';
 
+// import auth from '@react-native-firebase/auth';
 
 const Login = ({navigation , route}) => {
 
     const [email,setEmail] = useState('');
     const [password , setPassword] = useState('');
+    const [users,setUsers] = useState([]);
 
     const onPressLogin= async () => {
         try{
@@ -22,9 +23,25 @@ const Login = ({navigation , route}) => {
 
             if((email==='yukselcsgn@gmail.com' || email =='borakol@gmail.com')
             && (password==="12345") ){
-                console.log("User logged in successfully" , email, password);           
+                console.log("User logged in successfully" , email, password);
+                           
+                navigation.navigate("Home");
+   
+            }
+
+            const foundUser=users.find(user => user.email === email && user.password === password); // NOT: bu kod satırından
+                                                                                                // catch' e kadar olan kısım çalışmıyor...
+            if (foundUser) {
+                console.log("User logged in successfully", email, password);
                 navigation.navigate("Home");
             }
+            
+            else {
+                console.log("Invalid email or password");
+                Alert.alert("Social Campus", "Invalid email or password", [{
+                  text: "Understood", onPress: () => console.log("Alert closed...")
+                }]);
+              }
 
         //firebase doğrulaması
         // const userCredential = await auth().signInWithEmailAndPassword(email,password)

@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import {View,Text, Button, TextInput , TouchableOpacity, Alert } from "react-native";
+import {View,Text, TextInput , TouchableOpacity, Alert } from "react-native";
 
 import styles from "./Register.style";
 
@@ -18,7 +18,7 @@ const Register= ({navigation}) => {
   
   useEffect(() => {
     console.log('Current users:', users);
-  }, [users]); // Log users whenever it changes
+  }, [users]); 
 
 
   const handleSubmit= () => {
@@ -39,8 +39,9 @@ const Register= ({navigation}) => {
        return;
        }
 
-     setUsers((prevUsers) => [...prevUsers, user]); // Update users state with the new user
+     setUsers((prevUsers) => [...prevUsers, user]); 
      console.log('User successfully registered! ', user);
+    //  navigation.navigate("Home");
     
   }
 

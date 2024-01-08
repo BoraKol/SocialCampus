@@ -15,13 +15,13 @@ export default StyleSheet.create({
     },
     label:{
        textAlign:"left",
-       width:"17.4%", 
+       width:"22.4%", 
        marginBottom:5,
        color:"white",
        fontSize:16,
     },
     input_info:{
-        width: "20%",
+        width: "25%",
         backgroundColor:"#3AB4BA",
         borderRadius:25,
         height:50,
@@ -31,8 +31,9 @@ export default StyleSheet.create({
 
     },
     input_text: {
-        height:50,
+        height:60,
         color:"white",
+        
     },
     forgot_password: {
         marginTop:10,

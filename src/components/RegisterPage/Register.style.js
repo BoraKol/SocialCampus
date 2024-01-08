@@ -15,14 +15,14 @@ export default StyleSheet.create({
     },
     label:{
         textAlign:"left",
-        width:"17.4%",
+        width:"22.4%",
         marginBottom:5,
         fontSize:16,
         color:"white",
 
     },
     input_info:{
-        width:"20%",
+        width:"25%",
         backgroundColor:"#3AB4BA",
         borderRadius:25,
         height:50,
@@ -31,7 +31,7 @@ export default StyleSheet.create({
         padding:20,
     },
     input_text:{
-        height:50,
+        height:60,
         color:"white",
     },
     registerBtn:{
