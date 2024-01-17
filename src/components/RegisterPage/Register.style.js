@@ -12,13 +12,14 @@ export default StyleSheet.create({
         fontSize:30,
         color:"#fb5b5a",
         marginBottom:40,
+        marginTop:30,
     },
     label:{
         textAlign:"left",
         width:"22.4%",
         marginBottom:5,
         fontSize:16,
-        color:"white",
+        color:"black",
 
     },
     input_info:{
@@ -33,17 +34,18 @@ export default StyleSheet.create({
     input_text:{
         height:60,
         color:"white",
+        fontSize:16,
     },
     registerBtn:{
         backgroundColor:"orange" ,
         color:"black",
         borderRadius:25,
-        width:100,
+        width:150,
         textAlign:"center",
         padding:12,
-        marginTop:20,
-        marginBottom:10,
-        fontSize:14,
+        marginTop:15,
+        marginBottom:7,
+        fontSize:16,
         
     },
 
@@ -51,11 +53,11 @@ export default StyleSheet.create({
         backgroundColor:"orange" ,
         color:"black",
         borderRadius:25,
-        width:100,
+        width:150,
         textAlign:"center",
         padding:12,
         marginTop:10,
-        fontSize:14,
+        fontSize:16,
 
     }
 })

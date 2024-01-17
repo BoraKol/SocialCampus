@@ -17,7 +17,7 @@ export default StyleSheet.create({
        textAlign:"left",
        width:"22.4%", 
        marginBottom:5,
-       color:"white",
+       color:"black",
        fontSize:16,
     },
     input_info:{
@@ -33,30 +33,31 @@ export default StyleSheet.create({
     input_text: {
         height:60,
         color:"white",
+        fontSize:16,
         
     },
     forgot_password: {
-        marginTop:10,
+        marginTop:7,
         color:"white",
-        fontSize:14,
+        fontSize:16,
        
     },
     loginBtn:{
         backgroundColor:"orange",
         borderRadius:25,
-        width:100,
+        width:150,
         textAlign:"center",
         padding:12,
-        marginTop:20,
-        marginBottom:10,
-        fontSize:14, 
+        marginTop:15,
+        marginBottom:7,
+        fontSize:16, 
     },
     registerBtn:{
         color:"black",
         backgroundColor:"orange",
-        width:100,
+        width:150,
         textAlign:"center",
-        fontSize:14,
+        fontSize:16,
         marginTop:10,
         padding:12,
         borderRadius:25,
